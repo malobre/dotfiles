@@ -30,7 +30,6 @@ auto-format = true
 [[language]]
 name = "html"
 language-servers = [
-  { name = "vscode-html-language-server", except-features = [ "format" ] },
   { name = "superhtml", except-features = [ "format" ] },
   "biome"
 ]
