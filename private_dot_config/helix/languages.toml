@@ -29,8 +29,5 @@ auto-format = true
 
 [[language]]
 name = "html"
-language-servers = [
-  { name = "superhtml", except-features = [ "format" ] },
-  "biome"
-]
+language-servers = [ "biome" ]
 auto-format = true
