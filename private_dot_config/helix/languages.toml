@@ -28,6 +28,34 @@ language-servers = [ { name = "vscode-json-language-server", except-features = [
 auto-format = true
 
 [[language]]
+name = "jsonc"
+language-servers = [ { name = "vscode-json-language-server", except-features = [ "format" ] }, "biome" ]
+auto-format = true
+
+[[language]]
 name = "html"
+language-servers = [ "biome" ]
+auto-format = true
+
+[[language]]
+name = "svg"
+scope = "source.svg"
+injection-regex = "svg"
+file-types = ["svg"]
+language-servers = [ "biome" ]
+auto-format = true
+block-comment-tokens = { start = "<!--", end = "-->" }
+indent = { tab-width = 2, unit = "  " }
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+"'" = "'"
+"<" = ">"
+
+[[language]]
+name = "css"
 language-servers = [ "biome" ]
 auto-format = true
