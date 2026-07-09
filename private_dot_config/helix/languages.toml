@@ -13,12 +13,12 @@ language-servers = [ { name = "typescript-language-server", except-features = [ 
 auto-format = true
 
 [[language]]
-name = "tsx"
+name = "jsx"
 language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
 auto-format = true
 
 [[language]]
-name = "jsx"
+name = "tsx"
 language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
 auto-format = true
 
