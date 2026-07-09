@@ -1,0 +1,4 @@
+min_version = '2026.6.11'
+
+[tools]
+"github:jdx/usage" = "latest"
